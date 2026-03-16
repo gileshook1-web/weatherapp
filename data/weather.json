@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": -71.535,
+    "lat": -16.3989
+  },
+  "weather": [
+    {
+      "id": 801,
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 19.04,
+    "feels_like": 18.44,
+    "temp_min": 19.04,
+    "temp_max": 19.04,
+    "pressure": 1015,
+    "humidity": 55,
+    "sea_level": 1015,
+    "grnd_level": 712
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.6,
+    "deg": 220
+  },
+  "clouds": {
+    "all": 20
+  },
+  "dt": 1773675006,
+  "sys": {
+    "type": 1,
+    "id": 8696,
+    "country": "PE",
+    "sunrise": 1773658161,
+    "sunset": 1773702016
+  },
+  "timezone": -18000,
+  "id": 3947322,
+  "name": "Arequipa",
+  "cod": 200,
+  "_last_updated_utc": "2026-03-16T15:34:53.062Z"
+}
