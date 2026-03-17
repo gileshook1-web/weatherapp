@@ -24,14 +24,12 @@ jobs:
         key: ${{runner.os}}-node-${{hashFiles('package-lock.json')}}
     - name : Install Dependencies
       run: npm ci
-    - name: Fetch Latest Weather
-      run: npm ci
     - name: Fecth Latest Number
       env:
         WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         WEATHER_CITY: ${{ secrets.CITY}}
         PORT: ${{ secrets.PORT}}
-      run: node fecthweather.js
+      run: node fetchweather.js
     - name: Commit weather data if changed
       run: |
         git config user.name "github-actions[bot]"

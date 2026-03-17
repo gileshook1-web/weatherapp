@@ -20,13 +20,13 @@ describe('Weather Data Tests', () => {
         expect(data.weather[0]).toHaveProperty('description')
         expect(data).toHaveProperty('_last_updated_utc')
 
-        expect(new DataTransfer(data._last_updated_utc).toISOString()).toBe(data._last_updated_utc)
+        expect(new Date(data._last_updated_utc).toISOString()).toBe(data._last_updated_utc)
     })
 
     test('CSV log exists and has header' , () => {
         expect(fs.existsSync(CSV_FILE)).toBe(true)
     
-        const csvContent = fs.realFileSync(CSV_FILE, 'utf8')
+        const csvContent = fs.readFileSync(CSV_FILE, 'utf8')
         const lines = csvContent.trim().split('\n')
         const header = lines[0].split(',')
 
